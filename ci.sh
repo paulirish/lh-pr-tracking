@@ -27,7 +27,7 @@ GIT_COMMIT_MESSAGE="Update stats (via travis cron)"
 GIT_EMAIL="devtools-bot@users.noreply.github.com"
 GIT_NAME="DevTools Bot"
 GIT_REPO="paulirish/lh-pr-tracking"
-GIT_BRANCH="updatemain" # change
+GIT_BRANCH="master"
 
 
 if [[ -z "${GITHUB_ACTIONS}" ]]; then
