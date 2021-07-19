@@ -1,9 +1,9 @@
 name: refresh data
 
 on:
-  push:
-  # schedule:
-    # - cron: "10 0 * * *"
+  # push:
+  schedule:
+    - cron: "10 0 * * *"
 
 jobs:
   refresh:
@@ -17,4 +17,4 @@ jobs:
         ./ci.sh
       env:
         GITHUB_TOKEN: ${{ secrets.github_token }}
-        # GITHUB_DEPLOY_KEY: ${{ secrets.GITHUB_DEPLOY_KEY }}
+        # btw https://github.com/rust-lang/rustc-pr-tracking has a fancier setup. 
